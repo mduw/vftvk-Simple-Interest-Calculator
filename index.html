@@ -1,7 +1,9 @@
+<!DOCTYPE html>
 <html>
   <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <title>Simple Interest Calculator</title>
   </head>
   <body>
     <h1>Simple Interest Calculator</h1>
@@ -43,15 +45,11 @@
       <div><button onclick="compute()">Compute Interest</button></div>
       <br />
     </div>
-    <p id="result">
-      If you deposit <span id="oAmount">0</span> at an interest rate of
-      <span id="oRate">0</span>. You will receive an amount of
-      <span id="oInterest">0</span>, in the year
-      <span id="oNextDue"
-        ><script type="text/javascript">
-          document.write(new Date().getFullYear());
-        </script></span
-      >
+    <p id="result" style="display: none">
+      If you deposit <span id="oAmount"></span> at an interest rate of
+      <span id="oRate"></span>. You will receive an amount of
+      <span id="oInterest"></span>, in the year
+      <span id="oNextDue"></span>
     </p>
     <footer>&copy; Everyone Can Get Rich</footer>
   </body>
