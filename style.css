@@ -10,7 +10,7 @@ h1 {
   display: grid;
   grid-template-columns: 120px auto;
   padding: 8px;
-  width: 320px;
+  width: 350px;
   margin: 0 auto;
 }
 .item {
