@@ -8,7 +8,7 @@ function compute() {
   getCurrentRate();
   year = document.getElementById("years").value || 0;
 
-  interest = p * rate * year;
+  interest = p * rate/100 * year;
   nextDue = new Date().getFullYear() + parseInt(year);
 
   document.getElementById("result").style.display = "block";
