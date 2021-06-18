@@ -11,14 +11,14 @@
     <div class="container">
       <div class="item">Amount</div>
       <div class="item">
-        <input type="number" id="principal" placeholder="0" />
+        <input type="number" id="principal" placeholder="0" onchange="handlePrincipal()" />
       </div>
       <div class="item">Rate</div>
       <div class="item">
         <input
           type="range"
           id="rate"
-          min="0"
+          min="1"
           max="100"
           onchange="getCurrentRate()"
           step="0.1"
