@@ -1,4 +1,16 @@
-body {background-color:tan;}
-h1{color:green;}
+body {}
+h1{
+    color:green;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 8px;
+}
+.item {
+    padding: 8px;
+}
 
 
