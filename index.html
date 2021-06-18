@@ -8,7 +8,9 @@
 
     <div class="container">
       <div class="item">Amount</div>
-      <div class="item"><input type="number" id="principal" /></div>
+      <div class="item">
+        <input type="number" id="principal" placeholder="0" />
+      </div>
       <div class="item">Rate</div>
       <div class="item">
         <input
@@ -20,13 +22,37 @@
           step="0.1"
           value="0"
         />
-        <span id="currentRate">0</span>%
+        <span id="currentRate">0</span>
       </div>
       <div class="item">No. of Years</div>
-      <div class="item"><input type="number" id="years" /></div>
-      <div class="item">Interest:</div>
-      <div class="item"><span id="result"></span></div>
-      <div class="item"><button onclick="compute()">Compute</button></div>
+      <div class="item">
+        <select name="years" id="years">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div><button onclick="compute()">Compute Interest</button></div>
+      <br />
     </div>
+    <p id="result">
+      If you deposit <span id="oAmount">0</span> at an interest rate of
+      <span id="oRate">0</span>. You will receive an amount of
+      <span id="oInterest">0</span>, in the year
+      <span id="oNextDue"
+        ><script type="text/javascript">
+          document.write(new Date().getFullYear());
+        </script></span
+      >
+    </p>
+    <footer>&copy; Everyone Can Get Rich</footer>
   </body>
 </html>

@@ -1,16 +1,31 @@
-body {}
-h1{
-    color:green;
-    text-align: center;
+body {
+  width: 400px;
+  margin: 60px auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+h1 {
+  color: gray;
+}
 .container {
-    display: grid;
-    grid-template-columns: 150px auto;
-    padding: 8px;
+  display: grid;
+  grid-template-columns: 120px auto;
+  padding: 8px;
+  width: 320px;
+  margin: 0 auto;
 }
 .item {
-    padding: 8px;
+  padding: 10px 0;
+}
+#result {
+  margin: 0 auto;
+  width: 320px;
+  padding: 10px 0;
+}
+#result span {
+  background-color: yellow;
 }
 
-
+#currentRate::after,
+#oRate::after {
+  content: "%";
+}
